@@ -1,0 +1,299 @@
+/* CSS Variables for Warm Cream & Paper Theme */
+:root {
+  --bg: #fbf8f3;
+  --card-bg: #f3eee6;
+  --card-border: #e2d9cd;
+  --text-main: #2c2825;
+  --text-muted: #6b635b;
+  --accent: #c85a32; /* Warm Rust */
+  --accent-hover: #a84622;
+  --badge-bg: #eae3d7;
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-main);
+  font-family: var(--font-family);
+  line-height: 1.6;
+  padding: 2rem 1rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* Header & Navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  border-bottom: 2px solid var(--card-border);
+  padding-bottom: 1rem;
+}
+
+.brand h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.5px;
+}
+
+.brand p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+nav {
+  display: flex;
+  gap: 1.2rem;
+}
+
+nav a {
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* Status Banner */
+.status-banner {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-left: 4px solid var(--accent);
+  padding: 1rem 1.2rem;
+  border-radius: 6px;
+  margin-bottom: 2.5rem;
+  font-size: 0.95rem;
+}
+
+.status-banner strong {
+  color: var(--accent);
+}
+
+/* Sections */
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: var(--text-main);
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid var(--card-border);
+  padding-bottom: 0.4rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.skill-tag {
+  background-color: var(--badge-bg);
+  border: 1px solid var(--card-border);
+  color: var(--text-main);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Featured Project Card */
+.project-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 2px 2px 0px var(--card-border);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.8rem;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1rem 0;
+}
+
+.tech-badge {
+  font-size: 0.8rem;
+  background-color: var(--badge-bg);
+  border: 1px solid var(--card-border);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  color: var(--text-muted);
+}
+
+.ai-note {
+  background-color: rgba(200, 90, 50, 0.08);
+  border-left: 3px solid var(--accent);
+  padding: 0.6rem 0.8rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin: 1rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.github-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.github-btn:hover {
+  background-color: var(--accent-hover);
+}
+
+.github-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+/* Interactive Showcase Component */
+.interactive-widget {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.widget-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .widget-controls {
+    grid-template-columns: 1fr;
+  }
+}
+
+.widget-controls input, 
+.widget-controls select {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  background-color: var(--bg);
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+.widget-btn {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.widget-btn:hover {
+  background-color: var(--accent-hover);
+}
+
+.course-list {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.course-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.8rem;
+  background-color: var(--bg);
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.delete-btn {
+  color: var(--accent);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0 0.4rem;
+}
+
+.gpa-display {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  background-color: var(--badge-bg);
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* Contact & Footer */
+footer {
+  border-top: 1px solid var(--card-border);
+  padding-top: 1.5rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-links a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}

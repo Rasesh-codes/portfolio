@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rasesh Yadav — Student Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="brand">
+      <h1>Rasesh Yadav</h1>
+      <p>1st Year Computer Science Student</p>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#project">Project</a>
+      <a href="#interactive">JS Demo</a>
+    </nav>
+  </header>
+
+  <!-- Learning Status Banner -->
+  <div class="status-banner">
+    <strong>Currently Studying:</strong> Core Data Structures in Java, Node.js/Express REST routing, and SQL relational database queries.
+  </div>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm Rasesh! I am a first-year undergraduate CS student focused on building strong programming fundamentals. 
+      I am currently learning Object-Oriented Programming with <strong>Java</strong>, writing fundamental backend code with <strong>Node.js & Express</strong>, and exploring database concepts with <strong>SQL</strong>.
+    </p>
+    <p>
+      I focus on learning concepts independently step-by-step—understanding how standard data structures work, how HTTP requests flow through Express routes, and how to query relational tables.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Languages & Skills</h2>
+    <div class="skills-grid">
+      <span class="skill-tag">Java</span>
+      <span class="skill-tag">JavaScript</span>
+      <span class="skill-tag">Node.js</span>
+      <span class="skill-tag">Express.js</span>
+      <span class="skill-tag">SQL</span>
+      <span class="skill-tag">HTML5 / CSS3</span>
+      <span class="skill-tag">Git</span>
+    </div>
+  </section>
+
+  <!-- Featured Project -->
+  <section id="project">
+    <h2>Featured Project</h2>
+    <div class="project-card">
+      <div class="project-header">
+        <h3 class="project-title">Sentinel AI</h3>
+      </div>
+      <p>
+        An AI-powered scam detection and investigation platform that analyzes suspicious messages and URLs, surfaces evidence, and delivers explainable risk assessments to help users stay safe online.
+      </p>
+
+      <div class="ai-note">
+        🛠️ <em>Note: Built using AI in Gemini AI Studio.</em>
+      </div>
+
+      <div class="project-tech">
+        <span class="tech-badge">React</span>
+        <span class="tech-badge">Vite</span>
+        <span class="tech-badge">Node.js</span>
+        <span class="tech-badge">Gemini AI Studio</span>
+      </div>
+
+      <a href="https://github.com/Rasesh-codes/Sentinel-1" target="_blank" class="github-btn" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+        </svg>
+        View Code on GitHub
+      </a>
+    </div>
+  </section>
+
+  <!-- Interactive JS Showcase -->
+  <section id="interactive">
+    <h2>Interactive JS Showcase</h2>
+    <p>A simple frontend utility built with DOM manipulation to demonstrate basic JavaScript logic.</p>
+    
+    <div class="interactive-widget">
+      <h3 style="margin-bottom: 1rem; font-size: 1.1rem;">Semester Grade & GPA Calculator</h3>
+      <div class="widget-controls">
+        <input type="text" id="courseName" placeholder="Course (e.g. Java OOP)">
+        <input type="number" id="courseCredits" placeholder="Credits (e.g. 4)" min="1" max="6">
+        <select id="courseGrade">
+          <option value="10">A+ (10)</option>
+          <option value="9">A (9)</option>
+          <option value="8">B (8)</option>
+          <option value="7">C (7)</option>
+          <option value="6">D (6)</option>
+        </select>
+        <button class="widget-btn" id="addCourseBtn">Add Course</button>
+      </div>
+
+      <ul class="course-list" id="courseList"></ul>
+
+      <div>
+        <span>Estimated GPA: </span>
+        <div class="gpa-display" id="gpaDisplay">0.00</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="contact-links">
+      <a href="https://github.com/Rasesh-codes" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+    </div>
+    <p>&copy; Rasesh Yadav — Built with HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
